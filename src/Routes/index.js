@@ -40,22 +40,14 @@ randomRoute.route('/')
                         });
                     break;
                 default:
-                    res.status(500)
-                        .json({
-                            message: 'error'
-                        });
+                    next('Server Error');
             }
         });
     });
 
 failedRoute.route('/')
     .post((req, res, next) => {
-        delayResponse(() => {
-            res.status(500)
-                .json({
-                    message: 'error'
-                });
-        });
+        delayResponse(() => next('Server Error'));
     });
 
 routeGroup.use('/success', successRoute);

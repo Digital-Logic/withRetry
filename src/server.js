@@ -2,6 +2,7 @@ import express from 'express';
 import setupMiddleware from './globalMiddleware';
 import connect from './db';
 import routes from './Routes';
+import setupErrorHandlers from './errorHandlers';
 
 const app = express();
 
@@ -13,8 +14,12 @@ setupMiddleware(app);
 
 app.use('/api', routes);
 
-app.all('*', (req, res) => {
-    res.json({ message: "Hello World!"});
+app.use(express.static('public'));
+
+app.get('*', (req, res, next) => {
+    res.redirect('/');
 });
+
+setupErrorHandlers(app);
 
 export default app;

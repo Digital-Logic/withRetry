@@ -1,19 +1,5 @@
-# Express with HMR template
+# withRetry demo back-end
 
-## What it provides
-* Express with HMR
-* MongoDB, Mongoose
-* Testing with Mocha, Chai with watch mode
+Simple rest-api that response to request.
 
-### Available commands
-```javascript
-npm run start // Start the development server with HMR
-npm run build // Create a deployment build, (/build)
-npm run test  // Run tests through Mocha / Chai (with watch mode enabled)
-npm run clean // Remove build files
-```
-
-### Customize
-.env.defaults: is provided with some common defaults, override these settings with your own in a .env file.
-
-Create a .env.testing file to set specific settings to use during testing.
+View the front-end branch for more info.

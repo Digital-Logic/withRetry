@@ -23,11 +23,14 @@
     "dotenv-webpack": "^1.7.0",
     "mocha": "^5.2.0",
     "mocha-webpack": "^2.0.0-beta.0",
+    "morgan": "^1.9.1",
     "start-server-webpack-plugin": "^2.2.5",
     "webpack": "^4.29.0",
     "webpack-cli": "^3.2.1",
     "webpack-merge": "^4.2.1",
-    "webpack-node-externals": "^1.7.2"
+    "webpack-node-externals": "^1.7.2",
+    "winston": "^3.2.1",
+    "winston-daily-rotate-file": "^3.7.0"
   },
   "dependencies": {
     "@babel/runtime": "^7.3.1",
