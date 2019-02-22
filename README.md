@@ -1,9 +1,8 @@
 # withRetry (React Component)
 
-## The Problem
-You send a request to a back-end api and wait for a response. But what if the request fails? You probably want to retry before giving up - depending on why the request failed.
+withRetry manages the state and logic of re-sending data to an api endpoint, while keeping the end user update to date through a dialog box.
 
-This component handles the retry request, while keeping the user up to date on whats going on. However, it does not handle filtering errors, yet...
+[Demo](http://with-retry.digital-logic.net/)
 
 ## How it works
 
@@ -71,12 +70,3 @@ class MyForm extends PureComponent {
 
 export default withRetry(MyModel)(MyForm);
 ```
-
-
-
-### Task Lists
-
-- [x] Handles basic response
-- [x] Keeps user informed of what is happening
-- [ ] Handles authorization failures
-- [ ] Filtering and routing
