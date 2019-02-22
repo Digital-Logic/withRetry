@@ -7,7 +7,7 @@ const failedRoute = Router();
 const routeGroup = Router();
 
 
-function delayResponse(response, maxDelay=500) {
+function delayResponse(response, maxDelay=1000) {
     setTimeout(response,
         Math.floor(Math.random() * maxDelay));
 }
@@ -21,11 +21,6 @@ successRoute.route('/')
                     message: 'ok'
                 });
         });
-    });
-
-oneEachRoute.route('/')
-    .post( (req, res, next) => {
-
     });
 
 randomRoute.route('/')
