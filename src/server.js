@@ -1,13 +1,13 @@
 import express from 'express';
 import setupMiddleware from './globalMiddleware';
-import connect from './db';
+//import connect from './db';
 import routes from './Routes';
 import setupErrorHandlers from './errorHandlers';
 
 const app = express();
 
 // Setup database connection
-connect();
+//connect();
 
 // Setup Middleware
 setupMiddleware(app);

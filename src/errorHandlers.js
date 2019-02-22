@@ -15,7 +15,6 @@ function bodyParserHandler (err, req, res, next) {
     err.type === 'parameters.too.many' ||
     err.type === 'charset.unsupported' )
     {
-
         logger.log({
             level: 'error',
             message: err.message

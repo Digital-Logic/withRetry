@@ -21,9 +21,7 @@ const config = merge.strategy({
             defaults: true
         }),
         new webpack.DefinePlugin({
-            "process.env": {
-                "NODE_ENV": JSON.stringify('testing')
-            }
+            "process.env.NODE_ENV": JSON.stringify('testing')
         })
     ]
 });
