@@ -58,8 +58,7 @@ class UploadForm extends PureComponent {
     onSubmit = this.onSubmit.bind(this);
     onSubmit() {
         this.props.onSubmit(
-            () =>
-                axios.post(`/api/${this.state.simulate}`)
+            () => axios.post(`/api/${this.state.simulate}`)
         );
     }
 

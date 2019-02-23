@@ -61,7 +61,7 @@ class App extends Component {
 
                         <CardContent classes={{ root: classes.cardRoot }}>
                             <Grid container direction="column">
-                                <Typography align="center" gutterBottom variant="h5">Upload Error Simulater</Typography>
+                                <Typography align="center" gutterBottom variant="h5">withRetry Demo</Typography>
 
                                 <UploadForm />
                             </Grid>
